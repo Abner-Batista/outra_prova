@@ -1,4 +1,4 @@
-# Prova 2 — MongoDB
+# Outra Prova :) — MongoDB
 
 Banco de dados com Docker e MongoDB para gerenciar alunos de uma escola.
 
@@ -35,10 +35,10 @@ db.alunos.find({ idade: { $gt: 21 } })
 db.alunos.updateOne({ nome: "João Silva" }, { $set: { idade: 21 } })
 
 // 5. Adicionar uma nota a um aluno
-db.alunos.updateOne({ nome: "Maria Souza" }, { $push: { notas: 10 } })
+db.alunos.updateOne({ nome: "Gabriel Ferreira" }, { $push: { notas: 10 } })
 
 // 6. Remover um aluno
-db.alunos.deleteOne({ nome: "Pedro Santos" })
+db.alunos.deleteOne({ nome: "Larissa Costa" })
 
 // 7. Média de notas por aluno
 db.alunos.aggregate([{ $project: { nome: 1, media: { $avg: "$notas" } } }])
